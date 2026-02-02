@@ -1,0 +1,15 @@
+name: "Multi event pipe line /workflow" # Name of the pipeline
+
+on:
+    push: # Event: Whenever a push is made to the repository on the master / test branch
+        branches:
+            - master
+            - test
+
+jobs:
+    on-push:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: "Running on master push"
+              run: echo "Running on master push"
