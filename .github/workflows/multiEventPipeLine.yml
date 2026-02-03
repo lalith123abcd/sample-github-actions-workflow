@@ -32,5 +32,5 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         runs-on: ubuntu-latest
         steps: # Steps to be executed in the job
-            - name: "Running on workflow dipatches" # Step 1
+            - name: "Running on workflow dispatch" # Step 1
               run: echo "Running on workflow dispatch"
