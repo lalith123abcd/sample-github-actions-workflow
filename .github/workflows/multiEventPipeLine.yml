@@ -18,7 +18,7 @@ jobs:
 
         steps:
             - name: "Running on master push"
-              run: echo "Running on Master push"
+              run: echo "Running on Master pushes"
     
     on-pull-request: # Job 2
         if: github.event_name== 'pull_request'
